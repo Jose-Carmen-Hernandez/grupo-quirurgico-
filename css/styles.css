@@ -9,12 +9,13 @@
     font-family: 'Caudex', serif;
     box-sizing: border-box;
 }
+/*ESTILOS INDEX*/
 
 h1 {
     color: white;
     background-color: black;
     font-size: 2rem;
-    font-style:normal;
+    font-style: normal;
     font-weight: bold;
     text-align: center;
     border: 0.5rem double #fff;
@@ -23,7 +24,7 @@ h1 {
 
 /*HEADER*/
 header {
-    background-image: url(../img/adn\ doc.jpg);
+    background-image: url(../img/adn\ doc.webp);
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -65,16 +66,6 @@ header nav ul {
     justify-content: space-around;
 }
 
-header nav ul li button {
-    background-color: black;
-    border-color: #c6c72c;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    margin: 5px 3px;
-    padding: 3px 10px;
-}
-
 header nav ul li :hover {
     background-color: #ffffff5a;
     color: #000;
@@ -86,17 +77,25 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     font-size: large;
-
-}
-.hamburguesa{
-    width:4rem;
-    height:3rem;
-    background-color: #fff;
-    border-color: #000;
+    background-color: black;
+    border-color: #c6c72c;
     border-width: 2px;
-    border-style:solid;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px 3px;
+    padding: 3px 10px;
 }
 
+.hamburguesa {
+    width: 3rem;
+    height: 3rem;
+    background-color: #26bbe4;
+    border-color: #fff;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    margin: 0px;
+}
 
 /*...MAIN...*/
 
@@ -112,8 +111,11 @@ h2 {
     padding: 10px;
 }
 
-.hero {
-    background-image: url("../img/cirujanos.jpg");
+.index-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/cirujanos.webp");
     width: 100%;
     height: calc(100vh - 200px);
     background-repeat: no-repeat;
@@ -123,7 +125,7 @@ h2 {
     overflow: auto;
 }
 
-.hero p {
+.index-hero p {
     width: auto;
     height: auto;
     background-color: #ffffff5a;
@@ -143,7 +145,7 @@ h2 {
     background-color: #29799e;
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     flex-wrap: wrap;
 
 }
@@ -168,7 +170,7 @@ h2 {
 }
 
 /*ESTILOS APLICADOS A TODOS LOS h3 DEL PROYECTO*/
-h3{
+h3 {
     width: 100%;
     height: 60px;
     display: flex;
@@ -225,7 +227,7 @@ main a :hover {
 footer {
     width: 100%;
     height: auto;
-    background-image: url(../img/adn\ doc.jpg);
+    background-image: url(../img/adn\ doc.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -268,29 +270,32 @@ footer iframe {
     border-color: #ff3f00;
 }
 
-/*NOSOTROS*/
-.nosotros{
+/* ESTILOS NOSOTROS*/
+.nosotros {
     width: 100%;
-    height:auto;
-    display:flex;
+    height: auto;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #29799e;
 }
-.nosotros img{
-    width:40%;
-    height:auto;
-    margin:0;
+
+.nosotros img {
+    width: 40%;
+    height: auto;
+    margin: 0;
     padding-top: 5px;
 }
-.nosotros p{
-    width:60%;
+
+.nosotros p {
+    width: 60%;
     font-size: 2rem;
     font-weight: bold;
     margin: 10px;
     padding: 10px;
 }
 
+/*ESTILOS SERVICIOS*/
 .grid-servicios {
     border-style: inset;
     border-width: 5px;
@@ -464,6 +469,7 @@ footer iframe {
     margin-top: 10px;
     padding: 10px;
 }
+
 /*ESTA CLASE APLICA PARA LA GAMA DE SERVICIOS GENERALES Y BODY THERAPY*/
 .gama {
     width: 100%;
@@ -471,13 +477,19 @@ footer iframe {
     background-color: #26bbe4;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    font-size: 1.5rem;
-    color: #000;
-    line-height: 2.1rem;
+    align-items: start;
+    flex-wrap: wrap;
 }
 
-/*...BODY THERAPY...*/
+.gama ul {
+    font-size: 1.5rem;
+    color: #000;
+    /*line-height: 2.1rem;*/
+}
+
+
+
+/*...ESTILOS BODY THERAPY...*/
 
 .body-h2 {
     width: 100%;
@@ -489,7 +501,7 @@ footer iframe {
 }
 
 .body-hero {
-    background-image: url("../img/nutricionista.jpg");
+    background-image: url("../img/nutricionista.webp");
     width: 100%;
     height: calc(100vh - 200px);
     background-repeat: no-repeat;
@@ -504,17 +516,19 @@ footer iframe {
 
 }
 
-.body-hero p {
-    width: 70%;
+.body-hero p{
+    width: auto;
     height: auto;
     background-color: #ffffff5a;
     color: #000;
     border: 0.5rem double #000;
+    margin: 50px;
     padding: 10px;
     text-align: center;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: bold; 
 }
+
 
 /*--GRID BODY THERAPY--*/
 .grid-body {
@@ -555,6 +569,9 @@ footer iframe {
     display: flex;
     justify-content: center;
     background-color: #000;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
 }
 
 .body-2 {
@@ -650,68 +667,100 @@ footer iframe {
     padding: 10px;
 }
 
-/*CONTACTO*/
+/*ESTILOS CONTACTO*/
 
 /*CARRUSEL*/
-.div-bs{
+.div-bs {
     width: 100%;
     height: auto;
     background-color: #26bbe4;
 }
-.imagen{
-    width:100%;
-    height:calc(100vh - 200px);
-    object-fit:contain;
-    margin:10px;
+
+.imagen {
+    width: 100%;
+    height: calc(100vh - 200px);
+    object-fit: contain;
+    margin: 10px;
     padding: 10px;
 
-}.contacto-p{
+}
+
+.contacto-p {
     width: 100%;
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #c6c72c;
     border: 0.5rem double #000;
     padding: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight:bold;
 }
 
 
 /* ---MEDIA QUERIES INDEX---*/
-@media screen and (max-width:990px) {
+@media screen and (max-width:992px) {
 
     .logo {
         width: 140.6px;
         height: 129.3px;
     }
-    
-    header nav ul li a{
-        font-size:medium;
-    }
-}
-    .hero p {
 
-        margin: 25px;
-        text-align: center;
-        font-size: 2.5rem;
-        font-weight: bold;
+    header nav ul li a {
+        font-size: medium;
     }
+    .icono-whatsapp {
+        display: none;
+    }
+
+    .index-hero p {
+    font-size: 2.5rem;
+}
 
     footer iframe {
-        width: 250px;
-        height: 150px;
-        margin: 5px;
+    width: 250px;
+    height: 150px;
+    margin: 5px;
     }
 
-    @media screen and (max-width: 750px) {
-        .icono-whatsapp {
-            display: none;
+}
+@media screen and (max-width: 850px){
+        .index-hero p{
+            font-size: 2rem;
         }
-    .hero p {
-        font-size: 2rem;
-        font-weight: 900;
+}
+
+@media screen and (max-width: 780px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+    .index-hero {
+        height: calc(100vh - 300px);
+    }
+    
+
+    .index-hero p {
+        font-size: 1.75rem;
+    }
+
+    .contenedor-secciones p {
+        border: 0.25rem solid #000;
+        padding: 5px;
+        font-size: 0.80rem;
+        font-weight: 700;
+    }
+
+    .contenedor-secciones div {
+        /*BOX SHADOW*/
+        -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
+        box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
     }
 
     footer iframe {
@@ -730,97 +779,149 @@ footer iframe {
 
 @media screen and (max-width:680px) {
     h1 {
-        font-size: 1rem;
-    }
-
-    main h2 {
         font-size: 1.25rem;
     }
 
-    .hero p {
+    h2 {
+        font-size: 1rem;
+    }
+
+    .index-hero p {
         font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .logo {
+        width: 105.5px;
+        height: 97px;
     }
 }
 
-@media screen and (max-width: 560px) {
-    main h2 {
+@media screen and (max-width: 576px) {
+
+    .index-hero p {
         font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .contenedor-secciones p {
+        border: 0.25rem solid #000;
+        padding: 5px;
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+
+    footer iframe {
+        width: 200px;
+        height: 100px;
+    }
+
+    .iconos ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .iconos ul li i {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    footer address {
+        font-size: 0.55rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 0.75rem;
+    }
+
+    h2 {
+        font-size: .75rem
+    }
+
+    .logo {
+        width: 94.9px;
+        height: 87.3px;
+    }
+
+    footer {
+        flex-direction: column;
     }
 
 }
 
 /*MEDIA QUERIES 'NOSOTROS'*/
 
-@media screen and (max-width: 990px){
-    .nosotros img{
-        width:50%;
+@media screen and (max-width: 992px) {
+    .nosotros img {
+        width: 50%;
     }
-    .nosotros p{
-        width:50%;
+
+    .nosotros p {
+        width: 50%;
         font-size: 1.5rem;
         font-weight: bold;
     }
 }
-@media screen and (max-width: 750px){
-    .nosotros{
-        flex-direction:column;
+
+@media screen and (max-width: 780px) {
+    .nosotros {
+        flex-direction: column;
     }
-    .nosotros img{
-        width:80%;
+
+    .nosotros img {
+        width: 80%;
     }
-    .nosotros p{
-        width:80%;
+
+    .nosotros p {
+        width: 80%;
         font-size: 1.5rem;
         margin: 5px;
         padding: 5px;
     }
 }
-@media screen and (max-width: 680px){
-    
-    .nosotros p{
+
+@media screen and (max-width: 680px) {
+
+    .nosotros p {
         font-size: 1.25rem;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .nosotros p {
+        font-size: 1rem;
+    }
+
+}
+
 /*MEDIA QUERIES 'SERVICIOS GENERALES'*/
-
-@media screen and (max-width:950px) {
-    .servicios-gama {
-        width: 100%;
-        font-size: 1.25rem;
-        color: #fff;
-        margin: 5px;
-
+@media screen and (max-width:992px) {
+    .gama {
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    margin: 5px;
+    justify-content: space-between;
     }
+
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:850px) {
     .grid-servicios {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-            "s-1 s-4 s-4 "
-            "s-1 s-9 s-10 "
-            "s-8 s-2 s-3"
-            "s-8 s-2 s-3"
-            "s-6 s-7 s-5";
+        "s-1 s-4 s-4 "
+        "s-1 s-9 s-10 "
+        "s-8 s-2 s-3"
+        "s-8 s-2 s-3"
+        "s-6 s-7 s-5";
     }
 
 }
 
-@media screen and (max-width: 700px) {
-    .logo {
-        width: 105.5px;
-        height: 97px;
-    }
-
-    .servicios-h3 {
-        font-size: 1rem;
-    }
-
-    .servicios-gama {
-        font-size: 1rem;
-
-    }
-
+@media screen and (max-width: 790px) {
     .grid-servicios {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -833,31 +934,9 @@ footer iframe {
             "s-3 s-5";
     }
 
-    .iconos ul li i {
-        width: 15px;
-        height: 15px;
-        font-size: 1rem;
-    }
-
-    footer address {
-        font-size: 1rem;
-        padding-top: 10px;
-    }
-
-    footer iframe {
-        width: 150px;
-        height: 75px;
-    }
-
 }
 
-@media screen and (max-width:600px) {
-    .servicios-gama {
-        display: block;
-        font-size: 0.75rem;
-        text-align: center;
-    }
-
+@media screen and (max-width:680px) {
     .grid-servicios {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -877,19 +956,9 @@ footer iframe {
             "s-2";
     }
 
-    footer address {
-        font-size: .8rem;
-    }
 }
 
 /*MEDIA QUERIES BODY-THERAPY*/
-
-@media screen and (max-width: 1050px) {
-    .body-gama {
-        font-size: 1.25rem;
-    }
-
-}
 
 @media screen and (max-width: 850px) {
     .grid-body {
@@ -903,17 +972,21 @@ footer iframe {
     }
 
     .body-hero p {
+        font-size: 2.25rem;
+    }
+}
+@media screen and (max-width: 780px) {
+    .body-hero p{
         font-size: 2rem;
     }
-
-    .body-gama {
-        font-size: 1rem;
+    .body-hero{
+        height: calc(100vh - 300px)
     }
 }
 
-@media screen and (max-width:650px) {
-    .body-gama {
-        font-size: .9rem;
+@media screen and (max-width:680px) {
+    .body-hero p {
+        font-size: 1.75rem;
     }
 
     .grid-body {
@@ -930,24 +1003,45 @@ footer iframe {
             "b-8";
     }
 }
+@media screen and (max-width: 576px){
+    .body-hero p{
+        font-size: 1.5rem ;
+    }
+}
+@media screen and (max-width: 480px){
+.body-hero p{
+    font-size: 1rem;
+}
+}
 /*MEDIA QUERIES CONTACTO*/
 
-@media screen and (max-width:750px){
+@media screen and (max-width: 950px){
+    .contacto-p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .contacto-p {
+        font-size: 1.25rem;
+    }
+    .div-bs {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .div-bs {
+        height: 70vh;
+    }
     .contacto-p{
         font-size: 1rem;
     }
-    .imagen{
-        height:80vh;
-    }
 }
-@media screen and (max-width: 680px) {
-    .imagen{
-        height:70vh;
-    }
-}
-@media screen and (max-width: 550px){
-    .imagen{
+
+@media screen and (max-width: 550px) {
+    .div-bs {
         height: 60vh;
     }
-    
+
 }
