@@ -1,0 +1,66 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-image: url('../img/adn\ doc.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include flex-around(flex, row, space-around, center, wrap,);
+
+    .logo{
+        width: 187.5px;
+        height: 172.5px;
+        border-radius: 50%;
+        border-style: double;
+        border-color: $color-6;
+        background-color: $color-1;
+        border-width: 10px;
+        margin: 10px;
+        padding: 2px;
+    }
+    .iconos{
+
+        ul{
+            list-style: none;
+            li{
+                background-color: #ffffff5a;
+                border-color: $color-4;
+                border-width: 2px;
+                border-style: solid;
+                border-radius: 10px;
+                margin: 10px;
+                padding: 10px;
+                i{
+                    width: 20px;
+                    height: 20px;
+                    font-size: nth($tamaños-fuente, 4);
+                    font-weight: bolder;
+                    color: #000;
+                    display: inline;
+                    padding: 5px;
+                } 
+            }
+        }
+    }
+    address{
+        background-color: #ffffff5a;
+        color: #000;
+        font-size: nth($tamaños-fuente, 4);
+        font-weight: bold;
+        border-color: $color-4;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    iframe{
+        width: 250px;
+        height: 150px;
+        margin: 10px;
+        border-color: $color-4;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+}

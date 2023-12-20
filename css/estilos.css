@@ -1,0 +1,920 @@
+@charset "UTF-8";
+/*--VARIABLES  de colores 
+APLICADAS A TODOS LOS DOCUMENTOS DEL PROYECTO--*/
+/*LISTA tamaños de fuente. 
+SE APLICA EN TODOS LOS DOCUMENTOS DEL PROYECTO*/
+/*EXTENDS flex-wrap y flex-center
+SE APLICAN EN INDEX, BODY-THERAPY, CONTACTO,*/
+@import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+main .index-hero, .body-hero, .contacto-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+/*EXTEND flex-center
+SE APLICA EN INDEX, SERVICIOS GENERALES, BODY THERAPY, 
+CONTACTO*/
+section .grid-servicios .servicios-4-contenedor, section .grid-servicios .servicios-5-contenedor, section .grid-servicios .servicios-6-contenedor, section .grid-servicios .servicios-7-contenedor, .grid-body .body-2-contenedor, .grid-body .body-4-5-contenedor {
+  display: flex;
+  justify-content: center; }
+
+/*MIXIN APLICADO EN NOSOTROS*/
+.contenedor-nosotros {
+  display: flex;
+  flex-direction: column; }
+
+/*MIXIN APLICADO EN HEADER, FOOTER, NOSOTROS*/
+/*ESTE MIXIN SE UTILIZA EN HEADER*/
+/*---TIPOGRAFIA GOOGLE FONTS---*/
+/*---RESET---*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Caudex', serif;
+  box-sizing: border-box; }
+
+/*ESTILOS APLICADOS A TODOS LOS h2 DEL PROYECTO*/
+h2 {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  background-color: #929292;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: 0.5rem;
+  border-style: double;
+  border-color: #000;
+  margin: 5px 0;
+  padding: 0px; }
+
+/*MENU HAMBURGUESA DE BOOTSTRAP*/
+.hamburguesa {
+  width: 3rem;
+  height: 3rem;
+  background-color: #26bbe4;
+  border-color: #fff;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 0px; }
+
+/*CARRUSEL BOOTSTRAP*/
+.div-bs {
+  width: 100%;
+  height: auto;
+  background-color: #26bbe4; }
+
+/*---BOTON DE WHATSAPP*/
+.enlace-whatsapp a i {
+  font-size: 3rem;
+  background-color: #64d448;
+  color: #fff;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  border-radius: 10px;
+  transition: 1s; }
+  .enlace-whatsapp a i:hover {
+    background-color: #000;
+    color: #64d448;
+    transform: scale(1.2); }
+
+/*ESTAS 3 CLASES APLICAN PARA SERVICIOS GENERALES Y 
+BODY THERAPY*/
+main .gama {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#26bbe4, #fff);
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap; }
+
+.gama h3 {
+  width: 100%;
+  background-color: #c6c72c;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border: 0.5rem double;
+  border-color: #000;
+  margin-top: 10px;
+  padding: 10px; }
+
+.gama ul {
+  font-size: 1.5rem;
+  color: #000; }
+
+.grid-servicios img {
+  object-fit: cover;
+  /*BOX SHADOW IMAGENES 
+    GRID SERVICIOS-GENERALES*/
+  -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+  box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61); }
+
+/*IMAGENES DE CARRUSEL BOOTSTRAP CONTACTO*/
+.carrusel-imagen {
+  width: 100%;
+  height: calc(100vh - 200px);
+  object-fit: contain;
+  margin: 10px;
+  padding: 10px; }
+
+header {
+  background-image: url("../img/adn doc.webp");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  header h1 {
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    border: 0.5rem double;
+    border-color: #fff;
+    padding: 20px; }
+  header nav {
+    width: 100%;
+    justify-content: space-around; }
+    header nav .logo {
+      width: 187.5px;
+      height: 172.5px;
+      border-radius: 50%;
+      border-style: double;
+      border-color: #fff;
+      background-color: #29799e;
+      border-width: 10px;
+      margin: 10px;
+      padding: 2px; }
+    header nav ul {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: space-around; }
+      header nav ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: bold;
+        background-color: #000;
+        border: 2px solid;
+        border-color: #c6c72c;
+        border-radius: 10px;
+        margin: 5px 3px;
+        padding: 3px 10px;
+        transition: 1s; }
+        header nav ul li a:hover {
+          background-color: #ffffff5a;
+          color: #000;
+          transform: scale(1.1); }
+
+/*ESTILOS MAIN INDEX*/
+main .index-hero {
+  background-image: url("../img/cirujanos.webp");
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: auto; }
+  main .index-hero p {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff5a;
+    color: #000;
+    border: 0.5rem;
+    border-style: double;
+    border-color: #000;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold; }
+
+main .contenedor-tarjetas {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to bottom right, #29799e, #26bbe4, #fff);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  main .contenedor-tarjetas .tarjeta {
+    width: 350px;
+    height: auto;
+    background-color: #000;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: #fff;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    transition: 2s; }
+    main .contenedor-tarjetas .tarjeta:hover {
+      -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+      -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+      box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+      transform: scale(1.1); }
+    main .contenedor-tarjetas .tarjeta h3 {
+      width: 100%;
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      border: 0.5rem;
+      border-style: double;
+      border-color: #fff;
+      background-color: #c6c72c;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 5px 0; }
+    main .contenedor-tarjetas .tarjeta img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover; }
+    main .contenedor-tarjetas .tarjeta p {
+      width: 100%;
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c6c72c;
+      border: 0.5rem;
+      border-style: double;
+      border-color: #fff;
+      padding: 5px;
+      font-size: 1rem;
+      font-weight: bold; }
+
+/*ESTILOS MAIN NOSOTROS*/
+.contenedor-nosotros .div-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(to right, #29799e, #26bbe4, #000); }
+  .contenedor-nosotros .div-1 img {
+    width: 40%;
+    height: auto;
+    margin: 0;
+    padding-top: 5px; }
+  .contenedor-nosotros .div-1 p {
+    width: 60%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px;
+    padding: 10px; }
+
+/*---MAIN SERVICIOS GENERALES---*/
+section .grid-servicios {
+  border-style: inset;
+  border-width: 5px;
+  border-color: #26bbe4;
+  display: grid;
+  grid-auto-rows: 250px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas: "s-1 s-9 s-4 s-4" "s-1 s-6 s-10 s-3" "s-8 s-2 s-7 s-3" "s-8 s-2 s-5 s-5"; }
+  section .grid-servicios .servicios-1 {
+    grid-area: s-1;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #26bbe4;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  section .grid-servicios .servicios-2 {
+    grid-area: s-2;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #26bbe4;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  section .grid-servicios .servicios-3 {
+    grid-area: s-3;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #26bbe4;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  section .grid-servicios .servicios-4-contenedor {
+    grid-area: s-4;
+    background-image: linear-gradient(#26bbe4, #fff);
+    padding: 0px; }
+    section .grid-servicios .servicios-4-contenedor .servicios-4 {
+      width: 75%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #929292;
+      border-style: inset;
+      padding: 5px;
+      background-color: #000; }
+  section .grid-servicios .servicios-5-contenedor {
+    grid-area: s-5;
+    background-image: linear-gradient(#26bbe4, #fff);
+    padding: 0px; }
+    section .grid-servicios .servicios-5-contenedor .servicios-5 {
+      width: 80%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #929292;
+      border-style: inset;
+      padding: 5px;
+      background-color: #000; }
+  section .grid-servicios .servicios-6-contenedor {
+    grid-area: s-6;
+    background-image: linear-gradient(#26bbe4, #fff);
+    padding: 0px; }
+    section .grid-servicios .servicios-6-contenedor .servicios-6 {
+      width: 60%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #929292;
+      border-style: inset;
+      padding: 5px;
+      background-color: #000; }
+  section .grid-servicios .servicios-7-contenedor {
+    grid-area: s-7;
+    background-image: linear-gradient(#26bbe4, #fff);
+    padding: 0px; }
+    section .grid-servicios .servicios-7-contenedor .servicios-7 {
+      width: 60%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #29799e;
+      border-style: inset;
+      padding: 5px;
+      background-color: #000; }
+  section .grid-servicios .servicios-8 {
+    grid-area: s-8;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  section .grid-servicios .servicios-9 {
+    grid-area: s-9;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  section .grid-servicios .servicios-10 {
+    grid-area: s-10;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+
+.body-hero {
+  background-image: url("../img/nutricionista.webp");
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: auto; }
+  .body-hero p {
+    width: auto;
+    height: auto;
+    background-color: #ffffff5a;
+    color: #000;
+    border: 0.5rem double;
+    border-color: #000;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold; }
+
+/*--ESTILOS GRID BODY THERAPY*/
+.grid-body {
+  border-style: inset;
+  border-width: 5px;
+  border-color: #26bbe4;
+  display: grid;
+  grid-auto-rows: 250px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-areas: "b-1 b-2 b-3" "b-1 b-6 b-4-5" "b-7 b-6 b-8"; }
+  .grid-body .body-1 {
+    grid-area: b-1;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  .grid-body .body-2-contenedor {
+    grid-area: b-2;
+    background-image: linear-gradient(#26bbe4, #29799e);
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset; }
+    .grid-body .body-2-contenedor .body-2 {
+      -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+      -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+      box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+      width: 60%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #929292;
+      border-style: inset;
+      padding: 5px;
+      background-color: #29799e; }
+  .grid-body .body-3 {
+    grid-area: b-3;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  .grid-body .body-4-5-contenedor {
+    grid-area: b-4-5;
+    background-color: #929292; }
+    .grid-body .body-4-5-contenedor .body-4 {
+      width: 50%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #29799e;
+      border-style: inset;
+      padding: 5px;
+      background-color: #000; }
+    .grid-body .body-4-5-contenedor .body-5 {
+      width: 50%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #29799e;
+      border-style: inset;
+      padding: 5px;
+      background-color: #000; }
+  .grid-body .body-6 {
+    grid-area: b-6;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  .grid-body .body-7 {
+    grid-area: b-7;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  .grid-body .body-8 {
+    grid-area: b-8;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+
+.body-hero {
+  background-image: url("../img/nutricionista.webp");
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: auto; }
+  .body-hero p {
+    width: auto;
+    height: auto;
+    background-color: #ffffff5a;
+    color: #000;
+    border: 0.5rem double;
+    border-color: #000;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold; }
+
+/*--ESTILOS GRID BODY THERAPY*/
+.grid-body {
+  border-style: inset;
+  border-width: 5px;
+  border-color: #26bbe4;
+  display: grid;
+  grid-auto-rows: 250px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-areas: "b-1 b-2 b-3" "b-1 b-6 b-4-5" "b-7 b-6 b-8"; }
+  .grid-body .body-1 {
+    grid-area: b-1;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  .grid-body .body-2-contenedor {
+    grid-area: b-2;
+    background-image: linear-gradient(#26bbe4, #29799e);
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset; }
+    .grid-body .body-2-contenedor .body-2 {
+      -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+      -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+      box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+      width: 60%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #929292;
+      border-style: inset;
+      padding: 5px;
+      background-color: #29799e; }
+  .grid-body .body-3 {
+    grid-area: b-3;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  .grid-body .body-4-5-contenedor {
+    grid-area: b-4-5;
+    background-color: #929292; }
+    .grid-body .body-4-5-contenedor .body-4 {
+      width: 50%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #29799e;
+      border-style: inset;
+      padding: 5px;
+      background-color: #000; }
+    .grid-body .body-4-5-contenedor .body-5 {
+      width: 50%;
+      height: 100%;
+      border-width: 4px;
+      border-color: #29799e;
+      border-style: inset;
+      padding: 5px;
+      background-color: #000; }
+  .grid-body .body-6 {
+    grid-area: b-6;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  .grid-body .body-7 {
+    grid-area: b-7;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+  .grid-body .body-8 {
+    grid-area: b-8;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #29799e;
+    border-style: inset;
+    padding: 5px;
+    background-color: #000; }
+
+/*ESTE PARRAFO ES EL UNICO ELEMENTO DE ESTE DOCUMENTO
+EL RESTO DE ELEMENTOS YA SE ENCUENTRAN DECLARADOS EN OTROS PARTIAL
+Y EN EL DOCUMENTO _generales*/
+.contacto-p {
+  width: 100%;
+  height: 80px;
+  background-color: #c6c72c;
+  border: 0.5rem double;
+  border-color: #000;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold; }
+
+footer {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/adn doc.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  footer .logo {
+    width: 187.5px;
+    height: 172.5px;
+    border-radius: 50%;
+    border-style: double;
+    border-color: #fff;
+    background-color: #29799e;
+    border-width: 10px;
+    margin: 10px;
+    padding: 2px; }
+  footer .iconos ul {
+    list-style: none; }
+    footer .iconos ul li {
+      background-color: #ffffff5a;
+      border-color: #c6c72c;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px; }
+      footer .iconos ul li i {
+        width: 20px;
+        height: 20px;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        color: #000;
+        display: inline;
+        padding: 5px; }
+  footer address {
+    background-color: #ffffff5a;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-color: #c6c72c;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px; }
+  footer iframe {
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    border-color: #c6c72c;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px; }
+
+/* ---MEDIA QUERIES INDEX---*/
+@media screen and (max-width: 992px) {
+  header nav .logo {
+    width: 140.6px;
+    height: 129.3px; }
+  header nav ul li a {
+    font-size: medium; }
+  .enlace-whatsapp {
+    display: none; }
+  main .index-hero p {
+    font-size: 2.5rem; }
+  footer .logo {
+    width: 140.6px;
+    height: 129.3px; }
+  footer iframe {
+    width: 250px;
+    height: 150px;
+    margin: 5px; } }
+
+@media screen and (max-width: 930px) {
+  header h1 {
+    font-size: 1.75rem; } }
+
+@media screen and (max-width: 850px) {
+  main .index-hero p {
+    font-size: 2rem; }
+  header h1 {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 780px) {
+  header h1 {
+    font-size: 1.25rem; }
+  h2 {
+    font-size: 1.25rem; }
+  main .index-hero {
+    height: calc(100vh - 300px); }
+  main .index-hero p {
+    font-size: 1.75rem; }
+  .contenedor-secciones p {
+    border: 0.25rem solid #000;
+    padding: 5px;
+    font-size: 0.80rem;
+    font-weight: 700; }
+  .contenedor-secciones div {
+    /*BOX SHADOW*/
+    -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
+    box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0); }
+  footer iframe {
+    width: 200px;
+    height: 100px; }
+  footer .iconos ul li i {
+    font-size: 1rem; }
+  footer address {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 680px) {
+  header h1 {
+    font-size: 1rem; }
+  header nav .logo {
+    width: 105.5px;
+    height: 97px; }
+  h2 {
+    font-size: 1rem; }
+  .index-hero p {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  footer .logo {
+    width: 105.5px;
+    height: 97px; } }
+
+@media screen and (max-width: 576px) {
+  main .index-hero p {
+    font-size: 1.5rem;
+    font-weight: 600; }
+  .contenedor-secciones p {
+    border: 0.25rem solid #000;
+    padding: 5px;
+    font-size: 0.75rem;
+    font-weight: 700; }
+  footer iframe {
+    width: 200px;
+    height: 100px; } }
+
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 0.75rem; }
+  header nav .logo {
+    width: 94.9px;
+    height: 87.3px; }
+  h2 {
+    font-size: 0.75rem; }
+  main .index-hero p {
+    font-size: 1.25rem;
+    font-weight: 600; }
+  footer {
+    flex-direction: column; }
+  footer .logo {
+    width: 94.9px;
+    height: 87.3px; }
+  footer .iconos ul li i {
+    padding: 5px; } }
+
+@media screen and (max-width: 380px) {
+  main .index-hero p {
+    font-size: 1rem; } }
+
+/*MEDIA QUERIES 'NOSOTROS'*/
+@media screen and (max-width: 992px) {
+  .contenedor-nosotros .div-1 img {
+    width: 50%; }
+  .contenedor-nosotros .div-1 p {
+    font-size: 1.75rem; } }
+
+@media screen and (max-width: 780px) {
+  .contenedor-nosotros .div-1 {
+    flex-direction: column;
+    background-image: linear-gradient(#29799e, #26bbe4, #000); }
+  .contenedor-nosotros .div-1 img {
+    width: 80%; }
+  .contenedor-nosotros .div-1 p {
+    width: 80%;
+    margin: 5px;
+    padding: 5px; } }
+
+@media screen and (max-width: 680px) {
+  .contenedor-nosotros .div-1 p {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 400px) {
+  .contenedor-nosotros .div-1 p {
+    font-size: 1.25rem; } }
+
+/*MEDIA QUERIES 'SERVICIOS GENERALES'*/
+@media screen and (max-width: 850px) {
+  main .grid-servicios {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "s-1 s-4 s-4 " "s-1 s-9 s-10 " "s-8 s-2 s-3" "s-8 s-2 s-3" "s-6 s-7 s-5"; } }
+
+@media screen and (max-width: 790px) {
+  main .grid-servicios {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "s-9 s-4  " "s-1 s-8 " "s-1 s-8" "s-2 s-10" "s-2 s-6" "s-3 s-7" "s-3 s-5"; }
+  main .grid-servicios img {
+    object-fit: cover;
+    -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
+    box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0); }
+  main .gama h3 {
+    font-size: 1.25rem; }
+  main .gama ul {
+    font-size: 1.25rem; } }
+
+@media screen and (max-width: 680px) {
+  main .grid-servicios {
+    grid-template-columns: 1fr;
+    grid-template-areas: "s-9 " "s-4  " "s-1" "s-1 " "s-10" "s-6" "s-3" "s-3" "s-8" "s-8" "s-7" "s-5" "s-2" "s-2"; }
+  main .gama h3 {
+    font-size: 1rem; }
+  main .gama ul {
+    font-size: 1rem; }
+  main .gama {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  header nav ul li a {
+    font-size: 0.75rem; } }
+
+/*MEDIA QUERIES BODY-THERAPY*/
+@media screen and (max-width: 850px) {
+  .grid-body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "b-1 b-2" "b-1 b-3" "b-7 b-4-5" "b-6 b-8" "b-6 b-8"; }
+  .body-hero {
+    height: calc(100vh - 300px); }
+  .body-hero p {
+    font-size: 2.25rem; } }
+
+@media screen and (max-width: 780px) {
+  .body-hero p {
+    font-size: 2rem; } }
+
+@media screen and (max-width: 680px) {
+  .body-hero {
+    height: calc(100vh - 400px); }
+  .body-hero p {
+    font-size: 1.75rem; }
+  .grid-body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "b-2" "b-3" "b-1" "b-1" "b-4-5" "b-6" "b-6 " "b-7" "b-8"; } }
+
+@media screen and (max-width: 576px) {
+  .body-hero p {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 480px) {
+  .body-hero p {
+    font-size: 1.25rem; } }
+
+/*MEDIA QUERIES CONTACTO*/
+@media screen and (max-width: 950px) {
+  .contacto-p {
+    font-size: 1.75rem; } }
+
+@media screen and (max-width: 830px) {
+  .contacto-p {
+    font-size: 1.25rem; } }
+
+@media screen and (max-width: 680px) {
+  .contacto-p {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 550px) {
+  /*.div-bs {
+        height: 60vh;
+    }*/ }

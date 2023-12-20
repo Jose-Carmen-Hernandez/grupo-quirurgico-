@@ -1,0 +1,14 @@
+/*ESTE PARRAFO ES EL UNICO ELEMENTO DE ESTE DOCUMENTO
+EL RESTO DE ELEMENTOS YA SE ENCUENTRAN DECLARADOS EN OTROS PARTIAL
+Y EN EL DOCUMENTO _generales*/
+.contacto-p {
+    width: 100%;
+    height: 80px;
+    @extend %flex-wrap;
+    background-color: $color-4;
+    border: 0.5rem double;
+    border-color: $color-5;
+    padding: 10px;
+    font-size: nth($tamaños-fuente, 7);
+    font-weight:bold;
+}

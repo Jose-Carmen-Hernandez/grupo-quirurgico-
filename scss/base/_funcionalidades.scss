@@ -1,0 +1,55 @@
+/*--VARIABLES  de colores 
+APLICADAS A TODOS LOS DOCUMENTOS DEL PROYECTO--*/
+
+$color-1: #29799e;
+$color-2: #26bbe4;
+$color-3: #929292;
+$color-4: #c6c72c;
+$color-5: #000;
+$color-6: #fff;
+
+/*LISTA tamaños de fuente. 
+SE APLICA EN TODOS LOS DOCUMENTOS DEL PROYECTO*/
+
+$tamaños-fuente: 0.75rem, 0.8rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.5rem, 3rem; 
+
+/*EXTENDS flex-wrap y flex-center
+SE APLICAN EN INDEX, BODY-THERAPY, CONTACTO,*/
+%flex-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*EXTEND flex-center
+SE APLICA EN INDEX, SERVICIOS GENERALES, BODY THERAPY, 
+CONTACTO*/
+%flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+/*MIXIN APLICADO EN NOSOTROS*/
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/*MIXIN APLICADO EN HEADER, FOOTER, NOSOTROS*/
+
+@mixin flex-around($display, $direction, $justify, $align, $wrap) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+/*ESTE MIXIN SE UTILIZA EN HEADER*/
+@mixin justify-around($display,$justify){
+    display: $display;
+    justify-content: $justify;
+}
+
+

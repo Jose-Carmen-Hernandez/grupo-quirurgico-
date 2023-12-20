@@ -1,5 +1,4 @@
 /*....GOOGLE FONTS ...*/
-
 @import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
 
 /*RESET: Los estilos aplicados en esta seccion se reflejaran en todos los documentos html.El símbolo * representa un selector universal */
@@ -9,37 +8,45 @@
     font-family: 'Caudex', serif;
     box-sizing: border-box;
 }
-/*ESTILOS INDEX*/
-
-h1 {
-    color: white;
-    background-color: black;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: bold;
-    text-align: center;
-    border: 0.5rem double #fff;
-    padding: 20px;
-}
 
 /*HEADER*/
+
 header {
-    background-image: url(../img/adn\ doc.webp);
+    background-image: url('../img/adn\ doc.webp');
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: auto;
-    /*FLEXBOX*/
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
+header h1 {
+    width:100%;
+    color: #fff;
+    background-color:#000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    border: 0.5rem double;
+    border-color: #fff;
+    padding: 20px;
+}
 
-.logo {
+
+header nav {
+    /*<nav> mide 100% del ancho del header*/
+    width: 100%;
+    justify-content: space-around;
+}
+/*EL LOGO PASO A SER HIJO DEL NAV DE BOOTSTRAP*/
+header nav .logo {
     width: 187.5px;
     height: 172.5px;
     border-radius: 50%;
@@ -52,12 +59,6 @@ header {
 
 }
 
-header nav {
-    /*<nav> mide 75% del ancho del header*/
-    width: 100%;
-    justify-content: space-around;
-}
-
 header nav ul {
     /*<ul> mide 100% del ancho de nav*/
     width: 100%;
@@ -66,26 +67,26 @@ header nav ul {
     justify-content: space-around;
 }
 
-header nav ul li :hover {
-    background-color: #ffffff5a;
-    color: #000;
-    transition: all .3s;
-}
-
-header nav ul li a {
+header nav ul li a{
     display: inline-block;
     text-decoration: none;
-    color: white;
-    font-size: large;
-    background-color: black;
-    border-color: #c6c72c;
-    border-width: 2px;
-    border-style: solid;
+    color:#fff;
+    font-size: 1.25rem; 
+    font-weight: bold;
+    background-color: #000;
+    border:2px solid #c6c72c;
     border-radius: 10px;
     margin: 5px 3px;
     padding: 3px 10px;
+    transition: all 1s;
+}
+header nav ul li a:hover {
+    background-color:#ffffff5a;
+    color:#000;
+    transform:scale(1.1);
 }
 
+/*ESTA CLASE QUE SE DEBE COLOCAR EN EL DOC _generales*/
 .hamburguesa {
     width: 3rem;
     height: 3rem;
@@ -99,13 +100,17 @@ header nav ul li a {
 
 /*...MAIN...*/
 
-/*ESTILOS APLICADOS A TODOS LOS h2 DEL PROYECTO*/
+/*ESTILOS APLICADOS A TODOS LOS h2 DEL PROYECTO
+SE GUARDA EN _generales.scss*/
 h2 {
-    color: #fff;
+    width:100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    color: #000;
     background-color: #929292;
     font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
+    font-weight: bolder;
     border: 0.5rem double #000;
     margin: 5px 0;
     padding: 10px;
@@ -115,6 +120,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-image: url("../img/cirujanos.webp");
     width: 100%;
     height: calc(100vh - 200px);
@@ -126,7 +132,7 @@ h2 {
 }
 
 .index-hero p {
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: #ffffff5a;
     color: #000;
@@ -137,26 +143,20 @@ h2 {
     font-size: 3rem;
     font-weight: bold;
 }
-
 /*MAIN*/
-.contenedor-secciones {
+.contenedor-tarjetas {
     width: 100%;
     height: auto;
-    background-color: #29799e;
+    background-image: linear-gradient(to bottom right,#29799e,#26bbe4,#fff);
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 
 }
-
-.contenedor-secciones div {
+.tarjeta {
     /*BOX SHADOW*/
-    -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
-    -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
-    box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
-
-    /*---DIV---*/
+    
     width: 350px;
     height: auto;
     background-color: #000;
@@ -166,11 +166,17 @@ h2 {
     margin: 20px;
     padding: 10px;
     text-align: center;
+    transition: 2s;
+}
+.tarjeta:hover{
+    -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+    box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
 
+    transform:scale(1.1);
 }
 
-/*ESTILOS APLICADOS A TODOS LOS h3 DEL PROYECTO*/
-h3 {
+.tarjeta h3 {
     width: 100%;
     height: 60px;
     display: flex;
@@ -184,30 +190,32 @@ h3 {
     margin: 5px 0;
 }
 
-/*---DIV IMAGENES---*/
-.contenedor-secciones img {
+.tarjeta img {
     width: 100%;
     height: 350px;
     object-fit: cover;
 }
 
-/*---DIV PARRAFOS*/
-.contenedor-secciones p {
+.tarjeta p {
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #c6c72c;
-    border: 0.5rem double #000;
+    border: 0.5rem double #fff;
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
 }
 
-main i {
-    width: 50px;
-    height: 50px;
+/*BOTON WHATSAPP SE COLOCA EN GENERALES*/
+.enlace-whatsapp a :hover {
+    background-color: #000;
+    color: #64d448;
+    transform:scale(1.2);
+}
+.enlace-whatsapp i {
     font-size: 3rem;
     background-color: #64d448;
     color: #fff;
@@ -215,31 +223,33 @@ main i {
     top: 20px;
     right: 30px;
     border-radius: 10px;
-}
-
-main a :hover {
-    background-color: #000;
-    color: #64d448;
-    transition: .3s;
+    transition: 1s;
 }
 
 /*...FOOTER...*/
 footer {
     width: 100%;
     height: auto;
-    background-image: url(../img/adn\ doc.webp);
+    background-image: url('../img/adn\ doc.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
+.iconos ul{
 
-.iconos ul li {
     list-style: none;
+}
+.iconos ul li {
     background-color: #ffffff5a;
+    border-color: #c6c72c;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
     margin: 10px;
     padding: 10px;
 }
@@ -247,7 +257,7 @@ footer {
 .iconos ul li i {
     width: 20px;
     height: 20px;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: bolder;
     color: #000;
     display: inline;
@@ -257,8 +267,12 @@ footer {
 footer address {
     background-color: #ffffff5a;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: bold;
+    border-color: #c6c72c;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -266,31 +280,39 @@ footer iframe {
     width: 250px;
     height: 150px;
     margin: 10px;
-    border-width: 3px;
-    border-color: #ff3f00;
+    border-color: #c6c72c;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 /* ESTILOS NOSOTROS*/
-.nosotros {
+.contenedor-nosotros{
+    display: flex;
+}
+.div-1 {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #29799e;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(to right,#29799e, #26bbe4,#000); 
 }
 
-.nosotros img {
-    width: 40%;
+.div-1 img {
+    width: 50%;
     height: auto;
     margin: 0;
     padding-top: 5px;
 }
 
-.nosotros p {
-    width: 60%;
+.div-1 p {
+    width: 50%;
     font-size: 2rem;
     font-weight: bold;
+    color: #fff;
     margin: 10px;
     padding: 10px;
 }
@@ -310,7 +332,8 @@ footer iframe {
         "s-8 s-2 s-7 s-3"
         "s-8 s-2 s-5 s-5";
 }
-
+/*ESTA CLASE AFECTA A TODAS LAS IMAGENES DE LA GRID
+SE AGREGA A _gnerales*/
 .grid-servicios img {
     object-fit: cover;
     -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
@@ -327,7 +350,7 @@ footer iframe {
     border-color: #29799e;
     border-style: inset;
     padding: 5px;
-    background-color: #000;
+    background-color:#000;
 }
 
 .servicios-2 {
@@ -356,7 +379,7 @@ footer iframe {
     grid-area: s-4;
     display: flex;
     justify-content: center;
-    background-color: #29799e;
+    background-image: linear-gradient(#26bbe4, #fff ); 
     padding: 0px;
 }
 
@@ -375,7 +398,7 @@ footer iframe {
     grid-area: s-5;
     display: flex;
     justify-content: center;
-    background-color: #29799e;
+    background-image: linear-gradient(#29799e, #fff);
     padding: 0px;
 }
 
@@ -393,7 +416,7 @@ footer iframe {
     grid-area: s-6;
     display: flex;
     justify-content: center;
-    background-color: #26bbe4;
+    background-image: linear-gradient(#29799e, #fff);
     padding: 0px;
 }
 
@@ -412,7 +435,7 @@ footer iframe {
     grid-area: s-7;
     display: flex;
     justify-content: center;
-    background-color: #929292;
+    background-image: linear-gradient(#26bbe4, #fff);
     padding: 0px;
 }
 
@@ -459,46 +482,35 @@ footer iframe {
     background-color: #000;
 }
 
-.servicios-h3 {
-    width: 100%;
-    background-color: #c6c72c;
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-    border: 0.5rem double #000;
-    margin-top: 10px;
-    padding: 10px;
-}
+/*ESTAS 3 CLASES APLICAN PARA SERVICIOS GENERALES Y 
+BODY THERAPY. SE COLOCAN EN _generales*/
 
-/*ESTA CLASE APLICA PARA LA GAMA DE SERVICIOS GENERALES Y BODY THERAPY*/
 .gama {
     width: 100%;
     height: auto;
-    background-color: #26bbe4;
+    background-image: linear-gradient(#26bbe4, #fff) ; 
     display: flex;
     justify-content: space-around;
     align-items: start;
     flex-wrap: wrap;
 }
-
+.gama h3 {
+    width: 100%;
+    background-color: #c6c72c;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border: 0.5rem double #000;
+    margin-top: 10px;
+    padding: 10px;
+}
 .gama ul {
     font-size: 1.5rem;
     color: #000;
-    /*line-height: 2.1rem;*/
 }
-
-
 
 /*...ESTILOS BODY THERAPY...*/
-
-.body-h2 {
-    width: 100%;
-    background-color: #fff;
-    color: #29799e;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 10px;
-}
 
 .body-hero {
     background-image: url("../img/nutricionista.webp");
@@ -540,16 +552,9 @@ footer iframe {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-template-areas:
-        "b-1 b-2 b-3"
-        "b-1 b-6 b-4-5"
-        "b-7 b-6 b-8";
-}
-
-.grid-body img {
-    object-fit: contain;
-    -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
-    -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
-    box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+    "b-1 b-2 b-3"
+    "b-1 b-6 b-4-5"
+    "b-7 b-6 b-8";
 }
 
 /*...GRID ITEMS...*/
@@ -568,13 +573,16 @@ footer iframe {
     grid-area: b-2;
     display: flex;
     justify-content: center;
-    background-color: #000;
+    background-image:linear-gradient(#26bbe4 ,#29799e);
     border-width: 4px;
     border-color: #29799e;
     border-style: inset;
 }
 
 .body-2 {
+    -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+    box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
     width: 60%;
     height: 100%;
     border-width: 4px;
@@ -656,33 +664,22 @@ footer iframe {
     background-color: #000;
 }
 
-.body-h3 {
-    width: 100%;
-    background-color: #c6c72c;
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-    border: 0.5rem double #000;
-    margin-top: 10px;
-    padding: 10px;
-}
-
 /*ESTILOS CONTACTO*/
 
-/*CARRUSEL*/
+/*CARRUSEL BOOTSTRAP*/
+/*ESTA CLASE SE AGREGA A _generales*/
 .div-bs {
     width: 100%;
     height: auto;
-    background-color: #26bbe4;
+    background-image:linear-gradient(#29799e, #929292);
 }
 
-.imagen {
+.carrusel-imagen {
     width: 100%;
     height: calc(100vh - 200px);
     object-fit: contain;
     margin: 10px;
     padding: 10px;
-
 }
 
 .contacto-p {
@@ -702,7 +699,8 @@ footer iframe {
 
 /* ---MEDIA QUERIES INDEX---*/
 @media screen and (max-width:992px) {
-
+/*EN SASS SE DEBE ESPECIFICAR header nav .logo{
+    Y footer .logo{*/
     .logo {
         width: 140.6px;
         height: 129.3px;
@@ -711,14 +709,13 @@ footer iframe {
     header nav ul li a {
         font-size: medium;
     }
-    .icono-whatsapp {
+    .enlace-whatsapp {
         display: none;
     }
 
     .index-hero p {
     font-size: 2.5rem;
 }
-
     footer iframe {
     width: 250px;
     height: 150px;
@@ -791,7 +788,7 @@ footer iframe {
         font-weight: bold;
     }
 
-    .logo {
+    header nav .logo {
         width: 105.5px;
         height: 97px;
     }
@@ -827,7 +824,7 @@ footer iframe {
     }
 
     footer address {
-        font-size: 0.55rem;
+        font-size: 0.75rem;
     }
 }
 
@@ -899,11 +896,7 @@ footer iframe {
 /*MEDIA QUERIES 'SERVICIOS GENERALES'*/
 @media screen and (max-width:992px) {
     .gama {
-    width: 100%;
-    font-size: 1rem;
-    color: #fff;
-    margin: 5px;
-    justify-content: space-between;
+    justify-content: space-around;
     }
 
 }
@@ -925,13 +918,19 @@ footer iframe {
     .grid-servicios {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            "s-9 s-4  "
-            "s-1 s-8 "
-            "s-1 s-8"
-            "s-2 s-10"
-            "s-2 s-6"
-            "s-3 s-7"
-            "s-3 s-5";
+        "s-9 s-4  "
+        "s-1 s-8 "
+        "s-1 s-8"
+        "s-2 s-10"
+        "s-2 s-6"
+        "s-3 s-7"
+        "s-3 s-5";
+    }
+    .grid-servicios img {
+        object-fit: cover;
+        -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
+        box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0);
     }
 
 }
@@ -940,22 +939,21 @@ footer iframe {
     .grid-servicios {
         grid-template-columns: 1fr;
         grid-template-areas:
-            "s-9 "
-            "s-4  "
-            "s-1"
-            "s-1 "
-            "s-10"
-            "s-6"
-            "s-3"
-            "s-3"
-            "s-8"
-            "s-8"
-            "s-7"
-            "s-5"
-            "s-2"
-            "s-2";
+        "s-9 "
+        "s-4  "
+        "s-1"
+        "s-1 "
+        "s-10"
+        "s-6"
+        "s-3"
+        "s-3"
+        "s-8"
+        "s-8"
+        "s-7"
+        "s-5"
+        "s-2"
+        "s-2";
     }
-
 }
 
 /*MEDIA QUERIES BODY-THERAPY*/
@@ -964,11 +962,11 @@ footer iframe {
     .grid-body {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "b-1 b-2"
-            "b-1 b-3"
-            "b-7 b-4-5"
-            "b-6 b-8"
-            "b-6 b-8";
+        "b-1 b-2"
+        "b-1 b-3"
+        "b-7 b-4-5"
+        "b-6 b-8"
+        "b-6 b-8";
     }
 
     .body-hero p {
@@ -992,15 +990,15 @@ footer iframe {
     .grid-body {
         grid-template-columns: 1fr;
         grid-template-areas:
-            "b-2 "
-            "b-3"
-            "b-1"
-            "b-1"
-            "b-4-5"
-            "b-6"
-            "b-6 "
-            "b-7"
-            "b-8";
+        "b-2"
+        "b-3"
+        "b-1"
+        "b-1"
+        "b-4-5"
+        "b-6"
+        "b-6 "
+        "b-7"
+        "b-8";
     }
 }
 @media screen and (max-width: 576px){
@@ -1013,6 +1011,7 @@ footer iframe {
     font-size: 1rem;
 }
 }
+
 /*MEDIA QUERIES CONTACTO*/
 
 @media screen and (max-width: 950px){
@@ -1043,5 +1042,4 @@ footer iframe {
     .div-bs {
         height: 60vh;
     }
-
 }

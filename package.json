@@ -1,10 +1,13 @@
 {
   "name": "coderhouse-1",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1 align=\"center\">Hola 👋, soy José Carmen Hernández</h1><h3 align=\"center\">Estudiante de Desarrollo Web en Coderhouse</h3><p align=\"left\"> <img src=\"https://komarev.com/ghpvc/?username=jose-carmen-hernandez&label=Profile%20views&color=0e75b6&style=flat\" alt=\"jose-carmen-hernandez\" /> </p>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
   },
   "author": "",
   "license": "ISC"

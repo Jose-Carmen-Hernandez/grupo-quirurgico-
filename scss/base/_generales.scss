@@ -1,0 +1,115 @@
+/*---TIPOGRAFIA GOOGLE FONTS---*/
+@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
+/*---RESET---*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caudex', serif;
+    box-sizing: border-box;
+}
+
+/*ESTILOS APLICADOS A TODOS LOS h2 DEL PROYECTO*/
+h2 {
+    width:100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-5;
+    background-color: $color-3;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: 0.5rem;
+    border-style:double;
+    border-color: $color-5;
+    margin: 5px 0;
+    padding: 0px;
+}
+
+/*MENU HAMBURGUESA DE BOOTSTRAP*/
+.hamburguesa {
+    width: 3rem;
+    height: 3rem;
+    background-color: $color-2;
+    border-color: $color-6;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    margin: 0px;
+}
+
+/*CARRUSEL BOOTSTRAP*/
+.div-bs {
+    width: 100%;
+    height: auto;
+    background-color: $color-2;
+}
+/*---BOTON DE WHATSAPP*/
+.enlace-whatsapp{
+
+    a{
+    
+        i{
+            font-size: 3rem;
+            background-color: #64d448;
+            color: $color-6;
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            border-radius: 10px;
+            transition: 1s; 
+            &:hover{
+                background-color: $color-5;
+                color: #64d448;
+                transform:scale(1.2);
+            }
+        }
+    }
+    
+}
+/*ESTAS 3 CLASES APLICAN PARA SERVICIOS GENERALES Y 
+BODY THERAPY*/
+main .gama {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient($color-2, $color-6) ; 
+    display: flex;
+    justify-content:space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.gama h3 {
+    width: 100%;
+    background-color: $color-4;
+    color: $color-5;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border: 0.5rem double ;
+    border-color: $color-5;
+    margin-top: 10px;
+    padding: 10px;
+}
+.gama ul {
+    font-size: 1.5rem;
+    color: $color-5;
+}
+
+.grid-servicios img {
+    object-fit: cover;
+
+    /*BOX SHADOW IMAGENES 
+    GRID SERVICIOS-GENERALES*/
+    -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+    box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+}
+
+/*IMAGENES DE CARRUSEL BOOTSTRAP CONTACTO*/
+.carrusel-imagen {
+    width: 100%;
+    height: calc(100vh - 200px);
+    object-fit: contain;
+    margin: 10px;
+    padding: 10px;
+}

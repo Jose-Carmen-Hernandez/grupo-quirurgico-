@@ -1,0 +1,69 @@
+header{
+    background-image: url('../img/adn\ doc.webp');
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    @include flex-around (flex, row, space-around, center, wrap);
+
+    h1{
+        width:100%;
+        color: $color-6;
+        background-color: $color-5;
+        font-size: nth($tamaños-fuente, 7);
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        border: 0.5rem double;
+        border-color: $color-6;
+        padding: 20px;
+    }
+    
+    nav{
+        width: 100%;
+        justify-content: space-around;
+        .logo{
+            width: 187.5px;
+            height: 172.5px;
+            border-radius: 50%;
+            border-style: double;
+            border-color: $color-6;
+            background-color: $color-1;
+            border-width: 10px;
+            margin: 10px;
+            padding: 2px;
+        }
+        ul{
+            width: 100%;
+            list-style: none;
+            @include justify-around(flex, space-around);
+            
+            li{
+                
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $color-6;
+                    font-size: nth($tamaños-fuente, 4);
+                    font-weight: bold;
+                    background-color: $color-5;
+                    border:2px solid;
+                    border-color: $color-4; 
+                    border-radius: 10px;
+                    margin: 5px 3px;
+                    padding: 3px 10px;
+                    transition: 1s;
+                    
+                    &:hover{
+                        background-color:#ffffff5a;
+                        color:$color-5;
+                        transform:scale(1.1);
+                    }
+
+                }
+            }
+        }
+    }
+}
