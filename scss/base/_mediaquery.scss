@@ -254,18 +254,14 @@
         grid-template-columns: 1fr;
         grid-template-areas:
         "s-9 "
-        "s-4  "
+        "s-4 "
         "s-1"
-        "s-1 "
         "s-10"
         "s-6"
         "s-3"
-        "s-3"
-        "s-8"
         "s-8"
         "s-7"
         "s-5"
-        "s-2"
         "s-2";
     }
     main .gama h3{
@@ -298,7 +294,7 @@
         "b-6 b-8";
     }
     .body-hero{
-        height: calc(100vh - 300px)
+        height: calc(100vh - 100px)
     }
 
     .body-hero p {
@@ -323,10 +319,8 @@
         "b-2"
         "b-3"
         "b-1"
-        "b-1"
         "b-4-5"
         "b-6"
-        "b-6 "
         "b-7"
         "b-8";
     }
