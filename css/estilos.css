@@ -885,8 +885,6 @@ footer {
     font-size: 2rem; } }
 
 @media screen and (max-width: 680px) {
-  .body-hero {
-    height: calc(100vh - 400px); }
   .body-hero p {
     font-size: 1.75rem; }
   .grid-body {
@@ -913,8 +911,3 @@ footer {
 @media screen and (max-width: 680px) {
   .contacto-p {
     font-size: 1rem; } }
-
-@media screen and (max-width: 550px) {
-  /*.div-bs {
-        height: 60vh;
-    }*/ }
