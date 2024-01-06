@@ -19,10 +19,13 @@ footer{
         padding: 2px;
     }
     .iconos{
-
-        ul{
-            list-style: none;
-            li{
+        display: flex;
+        flex-direction:column;
+        a {
+            
+            i {
+                width: 235.39px;
+                height: 43.2px;
                 background-color: #ffffff5a;
                 border-color: $color-4;
                 border-width: 2px;
@@ -30,15 +33,9 @@ footer{
                 border-radius: 10px;
                 margin: 10px;
                 padding: 10px;
-                i{
-                    width: 20px;
-                    height: 20px;
-                    font-size: nth($tamaños-fuente, 4);
-                    font-weight: bolder;
-                    color: #000;
-                    display: inline;
-                    padding: 5px;
-                } 
+                font-size: nth($tamaños-fuente,4);
+                font-weight: bolder;
+                color: #000;
             }
         }
     }

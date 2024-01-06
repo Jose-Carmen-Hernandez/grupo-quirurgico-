@@ -240,11 +240,27 @@ footer {
     align-items: center;
     flex-wrap: wrap;
 }
-.iconos ul{
 
-    list-style: none;
+footer .logo {
+    width: 187.5px;
+    height: 172.5px;
+    border-radius: 50%;
+    border-style: double;
+    border-color: white;
+    background-color: #29799e;
+    border-width: 10px;
+    margin: 10px;
+    padding: 2px;
+    
 }
-.iconos ul li {
+footer .iconos{
+    display: flex;
+    flex-direction:column;
+}
+
+footer .iconos i{
+    width: 235.39px;
+    height: 43.2px;
     background-color: #ffffff5a;
     border-color: #c6c72c;
     border-width: 2px;
@@ -252,16 +268,9 @@ footer {
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-}
-
-.iconos ul li i {
-    width: 20px;
-    height: 20px;
     font-size: 1.25rem;
     font-weight: bolder;
     color: #000;
-    display: inline;
-    padding: 5px;
 }
 
 footer address {

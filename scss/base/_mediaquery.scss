@@ -1,5 +1,8 @@
 /* ---MEDIA QUERIES INDEX---*/
 @media screen and (max-width:992px) {
+    header h1{
+        font-size: 1.5rem;
+    }
     header nav .logo {
         width: 140.6px;
         height: 129.3px;
@@ -11,9 +14,12 @@
     .enlace-whatsapp {
         display: none;
     }
+    main .index-hero {
+        height: calc(100vh - 280px);
+    }
 
     main .index-hero p {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
 }
     footer .logo{
     width: 140.6px;
@@ -28,33 +34,29 @@
 }
 @media screen and (max-width: 930px){
     header h1{
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
     
 }
 @media screen and (max-width: 850px){
-        main .index-hero p{
-            font-size: 2rem;
-        }
-        header h1 {
-            font-size: 1.5rem;
-        }
-}
-
-@media screen and (max-width: 780px) {
-    header h1 {
-        font-size: 1.25rem;
-    }
     h2 {
         font-size: 1.25rem;
     }
     main .index-hero {
         height: calc(100vh - 300px);
     }
+    main .index-hero p{
+        font-size: 1.5rem;
+    }
+        
+}
+
+@media screen and (max-width: 780px) {
+    
     
 
     main .index-hero p {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
 
     .contenedor-secciones p {
@@ -93,17 +95,12 @@
         width: 105.5px;
         height: 97px;
     }
-    
-
     h2 {
         font-size: 1rem;
     }
-
-    .index-hero p {
-        font-size: 1.5rem;
-        font-weight: bold;
+    main .index-hero {
+        height: calc(100vh - 350px);
     }
-
     footer .logo {
         width: 105.5px;
         height: 97px;
@@ -111,12 +108,6 @@
 }
 
 @media screen and (max-width: 576px) {
-
-    main .index-hero p {
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-
     .contenedor-secciones p {
         border: 0.25rem solid #000;
         padding: 5px;
@@ -142,10 +133,6 @@
     h2 {
         font-size: 0.75rem;
     }
-    main .index-hero p {
-        font-size: 1.25rem;
-        font-weight: 600;
-    }
     footer {
         flex-direction: column;
     }
@@ -159,7 +146,10 @@
     }
 
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 440px){
+    main .index-hero {
+        height: calc(100vh - 400px);
+    }
     main .index-hero p {
         font-size: 1rem;
     }
@@ -216,7 +206,7 @@
         "s-1 s-4 s-4 "
         "s-1 s-9 s-10 "
         "s-8 s-2 s-3"
-        "s-8 s-2 s-3"
+        "s-8 s-7 s-3"
         "s-6 s-7 s-5";
     }
 
@@ -230,7 +220,7 @@
         "s-1 s-8 "
         "s-1 s-8"
         "s-2 s-10"
-        "s-2 s-6"
+        "s-6 s-7"
         "s-3 s-7"
         "s-3 s-5";
     }
@@ -250,19 +240,25 @@
 }
 
 @media screen and (max-width:680px) {
+    .servicios-2{
+        grid-area: s-2;
+        display:none;
+    }
     main .grid-servicios {
         grid-template-columns: 1fr;
         grid-template-areas:
-        "s-9 "
+        "s-9"
         "s-4 "
+        "s-1"
         "s-1"
         "s-10"
         "s-6"
         "s-3"
+        "s-3"
         "s-8"
         "s-7"
-        "s-5"
-        "s-2";
+        "s-7"
+        "s-5";
     }
     main .gama h3{
         font-size: 1rem;
@@ -318,6 +314,7 @@
         grid-template-areas:
         "b-2"
         "b-3"
+        "b-1"
         "b-1"
         "b-4-5"
         "b-6"

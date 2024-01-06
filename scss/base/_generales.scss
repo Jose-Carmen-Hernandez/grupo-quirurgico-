@@ -96,13 +96,7 @@ main .gama {
 }
 
 .grid-servicios img {
-    object-fit: cover;
-
-    /*BOX SHADOW IMAGENES 
-    GRID SERVICIOS-GENERALES*/
-    -webkit-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
-    -moz-box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
-    box-shadow: 27px 18px 17px -4px rgba(0, 0, 0, 0.61);
+    object-fit:fill;
 }
 
 /*IMAGENES DE CARRUSEL BOOTSTRAP CONTACTO*/

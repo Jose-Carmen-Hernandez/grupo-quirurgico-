@@ -1,6 +1,6 @@
 /*---MAIN SERVICIOS GENERALES---*/
 
-section{
+section {
 
     .grid-servicios{
         border-style: inset;
@@ -10,11 +10,12 @@ section{
         grid-auto-rows: 250px;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
+        padding: 5px;
         grid-template-areas:
         "s-1 s-9 s-4 s-4"
         "s-1 s-6 s-10 s-3"
         "s-8 s-2 s-7 s-3"
-        "s-8 s-2 s-5 s-5";
+        "s-8 s-2 s-7 s-5";
         
         .servicios-1{
             grid-area: s-1;
@@ -53,38 +54,34 @@ section{
             padding: 0px;
 
             .servicios-4{
-                width: 75%;
+                width: 100%;
                 height: 100%;
                 border-width: 4px;
                 border-color: $color-3;
                 border-style: inset;
+                /*margin-top: 5px;*/
                 padding: 5px;
                 background-color: $color-5; 
             }
         }
-        .servicios-5-contenedor{
-            grid-area: s-5;
-            @extend %flex-center;
-            background-image: linear-gradient($color-2, $color-6);
-            padding: 0px;
-            .servicios-5{
-                width: 80%;
-                height: 100%;
-                border-width: 4px;
-                border-color: $color-3;
-                border-style: inset;
-                padding: 5px;
-                background-color: $color-5;
+            .servicios-5-contenedor{
+                grid-area: s-5;
+                @extend %flex-center;
+                padding: 0;
+                .servicios-5{
+                    width: 100%;
+                    height: 100%;
+                    border-width: 4px;
+                    border-color: $color-3;
+                    border-style: inset;
+                    padding: 5px;
+                    background-color: $color-5;
+                }    
             }
-        }
-        .servicios-6-contenedor{
-            grid-area: s-6;
-            @extend %flex-center;
-            background-image: linear-gradient($color-2, $color-6);
-            padding: 0px;
-
+            
             .servicios-6{
-                width: 60%;
+                grid-area: s-6;
+                width: 100%;
                 height: 100%;
                 border-width: 4px;
                 border-color: $color-3;
@@ -92,23 +89,22 @@ section{
                 padding: 5px;
                 background-color: $color-5;
             }
-        }
-        .servicios-7-contenedor{
-            grid-area: s-7;
-            @extend %flex-center;
-            background-image: linear-gradient($color-2, $color-6);
-            padding: 0px;
+        
+    
+            .servicios-7-contenedor{
+                grid-area: s-7;
 
-            .servicios-7{
-                width: 60%;
-                height: 100%;
-                border-width: 4px;
-                border-color: $color-1;
-                border-style: inset;
-                padding: 5px;
-                background-color: $color-5;
-            }
-        }
+                .servicios-7{
+                    width: 100%;
+                    height: 100%;
+                    border-width: 4px;
+                    border-color: $color-1;
+                    border-style: inset;
+                    padding: 5px;
+                    background-color: $color-5;
+                }
+            }     
+        
         .servicios-8{
             grid-area: s-8;
             width: 100%;
