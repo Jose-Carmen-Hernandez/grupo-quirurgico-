@@ -1,6 +1,6 @@
 header{
     /*background-image: url('../img/adn\ doc.webp');*/
-    background: linear-gradient(#fff, #000,);
+    background: linear-gradient(#fff, #000,#29799e);
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -12,13 +12,13 @@ header{
     h1{
         width:100%;
         color: $color-6;
-        background-color: $color-5;
+        background-color: $color-1;
         font-size: nth($tamaños-fuente, 6);
         font-style: normal;
         font-weight: bold;
         text-align: center;
         border: 0.5rem double;
-        border-color: $color-6;
+        border-color: $color-5;
         padding: 20px;
     }
     

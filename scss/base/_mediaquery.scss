@@ -141,8 +141,15 @@
         width: 94.9px;
         height: 87.3px;
     }
+    footer address{
+        width: 235.39px;
+    }
     footer .iconos ul li i {
         padding: 5px;
+    }
+    footer iframe {
+        width: 235.39px;
+        height: auto;
     }
 
 }
@@ -154,6 +161,12 @@
         font-size: 1rem;
     }
 }
+@media screen and (max-width: 350px){
+    .contenedor-tarjetas p{
+        height: 100px;
+    }
+}
+
     
 /*MEDIA QUERIES 'NOSOTROS'*/
 @media screen and (max-width: 992px) {

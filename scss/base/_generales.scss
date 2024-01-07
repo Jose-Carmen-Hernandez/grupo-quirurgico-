@@ -38,12 +38,7 @@ h2 {
     margin: 0px;
 }
 
-/*CARRUSEL BOOTSTRAP*/
-.div-bs {
-    width: 100%;
-    height: auto;
-    background-color: $color-2;
-}
+
 /*---BOTON DE WHATSAPP*/
 .enlace-whatsapp{
 
@@ -99,11 +94,20 @@ main .gama {
     object-fit:fill;
 }
 
-/*IMAGENES DE CARRUSEL BOOTSTRAP CONTACTO*/
-.carrusel-imagen {
+
+
+/*CARRUSEL BOOTSTRAP*/
+.div-bs {
     width: 100%;
-    height: calc(100vh - 200px);
-    object-fit: contain;
-    margin: 10px;
-    padding: 10px;
+    height: auto;
+    background-color: $color-2;
 }
+
+/*IMAGENES DE CARRUSEL BOOTSTRAP CONTACTO*/
+    .carrusel-imagen {
+        width: 100%;
+        height: calc(100vh - 200px);
+        object-fit: contain;
+        margin: 10px;
+        padding: 10px;
+    }

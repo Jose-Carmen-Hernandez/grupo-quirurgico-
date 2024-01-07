@@ -25,7 +25,7 @@ footer{
             
             i {
                 width: 235.39px;
-                height: 43.2px;
+                height: auto;
                 background-color: #ffffff5a;
                 border-color: $color-4;
                 border-width: 2px;
@@ -36,10 +36,13 @@ footer{
                 font-size: nth($tamaños-fuente,4);
                 font-weight: bolder;
                 color: #000;
+                flex-wrap: wrap;
             }
         }
     }
     address{
+        width: 200px;
+        height: auto;
         background-color: #ffffff5a;
         color: #000;
         font-size: nth($tamaños-fuente, 4);
@@ -52,8 +55,8 @@ footer{
     }
 
     iframe{
-        width: 250px;
-        height: 150px;
+        width: 235.39px;
+        height: auto;
         margin: 10px;
         border-color: $color-4;
         border-width: 2px;
