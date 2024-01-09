@@ -1,3 +1,31 @@
+.comunicate{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .formulario-contenedor{
+        background-color: $color-1;
+        width: 50%;
+        height: calc(100vh - 200px);
+        margin: 5px;
+
+        h4{
+            width: 100%;
+            height: auto;
+            @extend %flex-wrap;
+            background-color: $color-4;
+            border: 0.5rem double;
+            border-color: $color-5;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: nth($tamaños-fuente, 4);
+            font-weight:900;
+        }
+    }
+}
+
 .contacto-p {
     width: 100%;
     height: 80px;

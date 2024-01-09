@@ -6,7 +6,7 @@ SE APLICA EN TODOS LOS DOCUMENTOS DEL PROYECTO*/
 /*EXTENDS flex-wrap y flex-center
 SE APLICAN EN INDEX, BODY-THERAPY, CONTACTO,*/
 @import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
-main .index-hero, .body-hero, .contacto-p {
+main .index-hero, .body-hero, .comunicate .formulario-contenedor h4, .contacto-p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,8 +110,11 @@ main .gama {
 /*CARRUSEL BOOTSTRAP*/
 .div-bs {
   width: 100%;
-  height: auto;
-  background-color: #26bbe4; }
+  height: calc(100vh - 200px);
+  background-color: #26bbe4;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 5px; }
 
 /*IMAGENES DE CARRUSEL BOOTSTRAP CONTACTO*/
 .carrusel-imagen {
@@ -120,6 +123,25 @@ main .gama {
   object-fit: contain;
   margin: 10px;
   padding: 10px; }
+
+/*CLASES QUE MODIFICAN EL FORMULARIO DE BOOTSTRAP*/
+.contenedor-f {
+  margin: 10px; }
+
+.label-fuente {
+  font-weight: 600; }
+
+.btn-contenedor {
+  display: flex;
+  justify-content: center; }
+
+.btn-color {
+  font-weight: 600;
+  background-color: #929292;
+  transition: 1s; }
+  .btn-color:hover {
+    background-color: #000;
+    color: #fff; }
 
 header {
   /*background-image: url('../img/adn\ doc.webp');*/
@@ -509,6 +531,28 @@ section .grid-servicios {
     padding: 5px;
     background-color: #000; }
 
+.comunicate {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  .comunicate .formulario-contenedor {
+    background-color: #29799e;
+    width: 50%;
+    height: calc(100vh - 200px);
+    margin: 5px; }
+    .comunicate .formulario-contenedor h4 {
+      width: 100%;
+      height: auto;
+      background-color: #c6c72c;
+      border: 0.5rem double;
+      border-color: #000;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1.25rem;
+      font-weight: 900; }
+
 .contacto-p {
   width: 100%;
   height: 80px;
@@ -789,9 +833,32 @@ footer {
     font-size: 1.75rem; } }
 
 @media screen and (max-width: 830px) {
+  .comunicate {
+    flex-direction: column;
+    align-items: center; }
+  .comunicate .formulario-contenedor {
+    width: 100%; }
   .contacto-p {
     font-size: 1.25rem; } }
 
 @media screen and (max-width: 680px) {
   .contacto-p {
     font-size: 1rem; } }
+
+@media screen and (max-width: 600px) {
+  .div-bs {
+    height: calc(100vh - 250px); }
+  .carrusel-imagen {
+    height: calc(100vh - 250px); } }
+
+@media screen and (max-width: 500px) {
+  .div-bs {
+    height: calc(100vh - 300px); }
+  .carrusel-imagen {
+    height: calc(100vh - 300px); } }
+
+@media screen and (max-width: 400px) {
+  .div-bs {
+    height: calc(100vh - 350px); }
+  .carrusel-imagen {
+    height: calc(100vh - 350px); } }

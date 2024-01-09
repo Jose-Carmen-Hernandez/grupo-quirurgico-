@@ -347,7 +347,6 @@
 }
 
 /*MEDIA QUERIES CONTACTO*/
-
 @media screen and (max-width: 950px){
     .contacto-p {
         font-size: 1.75rem;
@@ -355,6 +354,13 @@
 }
 
 @media screen and (max-width:830px) {
+    .comunicate{
+        flex-direction: column;
+        align-items:center; 
+    }
+    .comunicate .formulario-contenedor{
+        width:100%;
+    }
     .contacto-p {
         font-size: 1.25rem;
     }
@@ -365,4 +371,31 @@
         font-size: 1rem;
     }
 }
+
+@media screen and (max-width:600px){
+    .div-bs {
+        height: calc(100vh - 250px);
+    }
+    .carrusel-imagen{
+        height: calc(100vh - 250px);
+    }
+}
+@media screen and (max-width: 500px){
+    .div-bs {
+        height: calc(100vh - 300px);
+    }
+    .carrusel-imagen{
+        height: calc(100vh - 300px);
+    }
+}
+@media screen and (max-width: 400px){
+    .div-bs {
+        height: calc(100vh - 350px);
+    }
+    .carrusel-imagen{
+        height: calc(100vh - 350px);
+    }
+}
+
+
 
