@@ -1,15 +1,16 @@
 .comunicate{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
     width: 100%;
     height:auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    background-color: $color-2;
 
     .formulario-contenedor{
         background-color: $color-1;
         width: 50%;
-        height: calc(100vh - 200px);
-        margin: 5px;
+        height:auto;
+        margin: 10px;
 
         h4{
             width: 100%;

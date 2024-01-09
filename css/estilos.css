@@ -111,10 +111,8 @@ main .gama {
 .div-bs {
   width: 100%;
   height: calc(100vh - 200px);
-  background-color: #26bbe4;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: 5px; }
+  /*background-color: $color-2;*/
+  align-items: center; }
 
 /*IMAGENES DE CARRUSEL BOOTSTRAP CONTACTO*/
 .carrusel-imagen {
@@ -138,10 +136,13 @@ main .gama {
 .btn-color {
   font-weight: 600;
   background-color: #929292;
+  margin: 10px;
   transition: 1s; }
   .btn-color:hover {
     background-color: #000;
-    color: #fff; }
+    color: #fff;
+    border-color: #c6c72c;
+    border-width: 2px; }
 
 header {
   /*background-image: url('../img/adn\ doc.webp');*/
@@ -532,16 +533,17 @@ section .grid-servicios {
     background-color: #000; }
 
 .comunicate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; }
+  background-color: #26bbe4; }
   .comunicate .formulario-contenedor {
     background-color: #29799e;
     width: 50%;
-    height: calc(100vh - 200px);
-    margin: 5px; }
+    height: auto;
+    margin: 10px; }
     .comunicate .formulario-contenedor h4 {
       width: 100%;
       height: auto;
