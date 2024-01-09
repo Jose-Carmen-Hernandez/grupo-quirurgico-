@@ -819,7 +819,7 @@ footer {
     font-size: 1.75rem; }
   .grid-body {
     grid-template-columns: 1fr;
-    grid-template-areas: "b-2" "b-3" "b-1" "b-1" "b-4-5" "b-6" "b-7" "b-8"; } }
+    grid-template-areas: "b-2" "b-3" "b-1" "b-1" "b-4-5" "b-6" "b-6" "b-7" "b-8"; } }
 
 @media screen and (max-width: 576px) {
   .body-hero p {
